@@ -23,11 +23,8 @@
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     double doubleValue = [defaults doubleForKey:@"default_tip_percentage"];
-    NSLog(@"%@", [NSString stringWithFormat:@"eee %f",doubleValue]);
     
     int sliderValue = doubleValue*100;
-    
-    NSLog(@"%@", [NSString stringWithFormat:@"aaa %d",sliderValue]);
     
     self.percentageLabel.text = [NSString stringWithFormat:@"%d%%",sliderValue];
     self.percentageSlider.value = sliderValue;

@@ -43,7 +43,7 @@
 		7B03842F22C2C1C9001D9280 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7B03843222C2C1C9001D9280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B03843422C2C1CA001D9280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7B03843722C2C1CA001D9280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Assets.xcassets/Logo.imageset/logo.png; sourceTree = "<group>"; };
+		7B03843722C2C1CA001D9280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B03843922C2C1CA001D9280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B03843A22C2C1CA001D9280 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B03844022C2C1CA001D9280 /* TipsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +222,7 @@
 			knownRegions = (
 				en,
 				Base,
+				global,
 			);
 			mainGroup = 7B03841F22C2C1C9001D9280;
 			productRefGroup = 7B03842922C2C1C9001D9280 /* Products */;
