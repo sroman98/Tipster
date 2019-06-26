@@ -28,13 +28,14 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/wS7gA9VnNM.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/OI2TpiJX8B.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [Recordit](http://recordit.co/).
 
 ## Notes
 
-I haven't had any trouble (at least for now).
+I had somo trouble testing on the actual phone because of the keychain password.
+The tutorial says we should use push as our segue, but it is now deprecated, so I used show.
 
 ## Credits
 
