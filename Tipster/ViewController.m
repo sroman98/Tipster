@@ -73,4 +73,19 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    double bill = [self.billField.text doubleValue];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    double tipPercentage = [defaults doubleForKey:@"default_tip_percentage"];
+    
+    double tip = tipPercentage * bill;
+    double total = bill + tip;
+    
+    self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tip];
+    self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", total];
+}
+
 @end

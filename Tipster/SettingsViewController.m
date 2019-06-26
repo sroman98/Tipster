@@ -44,8 +44,6 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setDouble:defaultPercentage forKey:@"default_tip_percentage"];
     [defaults synchronize];
-    
-    
 }
 
 /*
