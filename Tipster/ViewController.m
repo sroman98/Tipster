@@ -13,7 +13,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *billField;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 
 
 @end
@@ -23,19 +22,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    double tipPercentage = [defaults doubleForKey:@"default_tip_percentage"];
+    
+    if(tipPercentage == 0) {
+        [defaults setDouble:0.2 forKey:@"default_tip_percentage"];
+        [defaults synchronize];
+        tipPercentage = 0.2;
+    }
 }
 
 - (IBAction)onTap:(id)sender {
-    NSLog(@"Hello");
     [self.view endEditing:YES];
 }
 
 - (IBAction)onEdit:(id)sender {
     double bill = [self.billField.text doubleValue];
     
-    NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
-    
-    double tipPercentage = [percentages[self.tipControl.selectedSegmentIndex] doubleValue];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    double tipPercentage = [defaults doubleForKey:@"default_tip_percentage"];
     
     double tip = tipPercentage * bill;
     double total = bill + tip;

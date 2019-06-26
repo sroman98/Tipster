@@ -15,6 +15,7 @@
 		7B03843B22C2C1CA001D9280 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B03843A22C2C1CA001D9280 /* main.m */; };
 		7B03844522C2C1CB001D9280 /* TipsterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B03844422C2C1CB001D9280 /* TipsterTests.m */; };
 		7B03845022C2C1CB001D9280 /* TipsterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B03844F22C2C1CB001D9280 /* TipsterUITests.m */; };
+		7B228B0822C2E3A60075EAE8 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B228B0722C2E3A60075EAE8 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		7B03844B22C2C1CB001D9280 /* TipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B03844F22C2C1CB001D9280 /* TipsterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsterUITests.m; sourceTree = "<group>"; };
 		7B03845122C2C1CB001D9280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B228B0622C2E3A60075EAE8 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		7B228B0722C2E3A60075EAE8 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 			children = (
 				7B03842B22C2C1C9001D9280 /* AppDelegate.h */,
 				7B03842C22C2C1C9001D9280 /* AppDelegate.m */,
+				7B228B0622C2E3A60075EAE8 /* SettingsViewController.h */,
+				7B228B0722C2E3A60075EAE8 /* SettingsViewController.m */,
 				7B03842E22C2C1C9001D9280 /* ViewController.h */,
 				7B03842F22C2C1C9001D9280 /* ViewController.m */,
 				7B03843122C2C1C9001D9280 /* Main.storyboard */,
@@ -265,6 +270,7 @@
 				7B03843022C2C1C9001D9280 /* ViewController.m in Sources */,
 				7B03843B22C2C1CA001D9280 /* main.m in Sources */,
 				7B03842D22C2C1C9001D9280 /* AppDelegate.m in Sources */,
+				7B228B0822C2E3A60075EAE8 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
